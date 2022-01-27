@@ -1,0 +1,55 @@
+body {
+    color: white;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 76em;
+    background-position: top center;
+    width: 100%;
+}
+main {
+    padding-top: 25em;
+    margin: auto;
+    width: 61vw;
+}
+article {
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+    padding: 1em 0;
+}
+p {
+    text-indent: 17px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 2em;
+    padding: 1em;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+
+@media only screen
+and (max-device-width: 414px) {
+    body {
+        background-size: 100%;
+    }
+    main {
+        padding-top: 7em;
+        width: 90vw;
+    }
+}
