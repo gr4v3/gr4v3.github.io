@@ -43,13 +43,38 @@ footer a:hover {
     color: white;
 }
 
+
 @media only screen
-and (max-device-width: 414px) {
+and (max-device-width: 1200px) {
     body {
         background-size: 100%;
     }
     main {
-        padding-top: 7em;
+        padding-top: 25em;
         width: 90vw;
     }
 }
+
+@media only screen
+and (max-device-width: 1024px) {
+    body {
+        background-size: 100%;
+    }
+    main {
+        padding-top: 22em;
+        width: 90vw;
+    }
+}
+
+@media only screen
+and (max-device-width: 480px) {
+    body {
+        background-size: 100%;
+    }
+    main {
+        padding-top: 8em;
+        width: 90vw;
+    }
+}
+
+
