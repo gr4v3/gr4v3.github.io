@@ -42,9 +42,9 @@ $cache = time();
         </a>
     </footer>
 </main>
-<audio>
-    <source src="/mp3/Hino%20Loop.wav" data-out="8" type="audio/mpeg">
-    <source src="/mp3/Fun%20&%20Farra%203%20(mp3cut.net).wav" data-out="4" type="audio/mpeg">
+<audio preload="metadata">
+    <source src="/mp3/Hino%20Loop.wav" data-volume="-5" data-out="7" type="audio/mpeg">
+    <source src="/mp3/Fun%20&%20Farra%203%20(mp3cut.net).wav" data-volume="0" data-out="5" type="audio/mpeg">
 </audio>
 <section class="permission muted">
     <ion-icon name="volume-mute-outline"></ion-icon>
@@ -69,7 +69,7 @@ $cache = time();
         new Promise(function(resolve) {
             let audio = document.querySelector('audio');
             audio.addEventListener('ended', function() {
-                volume = -5;
+                volume = 0;
                 step = 5;
                 let currentTrack = audio.querySelector('.active');
                 let nextTrack = currentTrack.nextElementSibling;
@@ -79,7 +79,7 @@ $cache = time();
                     audio.src = nextTrack.src;
                     audio.onloadedmetadata = function() {
                         setTimeout(function() {
-                            step = -5;
+                            step = 0;
                         }, (audio.duration - Number(nextTrack.dataset.out)) * 1000);
                         audio.play().then(function() {
 
