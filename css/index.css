@@ -6,10 +6,10 @@ body {
 }
 h1 {
     text-align: center;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     font-family: sans-serif;
     text-transform: uppercase;
-    font-size: 3.5rem;
 }
 main {
     width: 61vw;
@@ -38,9 +38,7 @@ footer a {
 footer a:hover {
     color: white;
 }
-article {
-    padding: 0.9em;
-}
+
 audio {
     position: absolute;
     bottom: 0;
@@ -62,6 +60,16 @@ and (max-device-width: 1024px) {
 }
 
 @media only screen
+and (min-device-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    article {
+        padding: 0.9em;
+    }
+}
+
+@media only screen
 and (max-device-width: 768px) {
     main {
         width: 90vw;
@@ -72,6 +80,9 @@ and (max-device-width: 768px) {
 and (max-device-width: 480px) {
     main {
         width: 95vw;
+    }
+    main > header {
+        margin-top: 2em;
     }
 }
 

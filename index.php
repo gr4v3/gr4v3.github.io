@@ -19,7 +19,7 @@ $cache = time();
 <body>
 <main>
     <header>
-        <img src="img/fundo1.jpg" alt="Dul N'Nouk White"/>
+        <img src="img/fundo2.jpg" alt="Dul N'Nouk White"/>
     </header>
     <article>
         <h1>dul and nouk white</h1>
@@ -42,73 +42,24 @@ $cache = time();
         </a>
     </footer>
 </main>
-<audio preload="metadata">
-    <source src="/mp3/Hino%20Loop.wav" data-volume="-5" data-out="7" type="audio/mpeg">
-    <source src="/mp3/Fun%20&%20Farra%203%20(mp3cut.net).wav" data-volume="0" data-out="5" type="audio/mpeg">
+<audio preload="metadata" loop>
+    <source src="/mp3/test1.mp3" type="audio/mpeg">
 </audio>
 <section class="permission muted">
     <ion-icon name="volume-mute-outline"></ion-icon>
     <ion-icon name="volume-off-outline"></ion-icon>
 </section>
 <script type="text/javascript">
-    let volume = -5;
-    let step = 5;
-    document.querySelector('audio').addEventListener('timeupdate', function(e) {
-        volume = volume + step;
-        if (volume > 100) {
-            volume = 100;
-        }
-        if (volume < 0) {
-            volume = 0;
-        }
-        console.log(volume);
-        document.querySelector('audio').volume = volume / 100;
-    })
     document.querySelector( 'section.permission' ).addEventListener( 'click', function() {
 
         new Promise(function(resolve) {
             let audio = document.querySelector('audio');
-            audio.addEventListener('ended', function() {
-                volume = 0;
-                step = 5;
-                let currentTrack = audio.querySelector('.active');
-                let nextTrack = currentTrack.nextElementSibling;
-                if (nextTrack) {
-                    currentTrack.classList.remove('active');
-                    nextTrack.classList.add('active');
-                    audio.src = nextTrack.src;
-                    audio.onloadedmetadata = function() {
-                        setTimeout(function() {
-                            step = 0;
-                        }, (audio.duration - Number(nextTrack.dataset.out)) * 1000);
-                        audio.play().then(function() {
-
-                        });
-                    };
-                } else {
-                    let firstSource = audio.querySelector('source:first-child');
-                    currentTrack.classList.remove('active');
-                    firstSource.classList.add('active');
-                    audio.src = firstSource.src;
-                    audio.onloadedmetadata = function() {
-                        setTimeout(function() {
-                            step = -5;
-                        }, (audio.duration - Number(firstSource.dataset.out)) * 1000);
-                        audio.play().then(function() {
-
-                        });
-                    };
-                }
-            });
             if (audio.paused) {
                 let firstSource = audio.querySelector('source:first-child');
                 firstSource.classList.add('active');
                 audio.paused = false;
                 audio.src = firstSource.src;
                 audio.onloadedmetadata = function() {
-                    setTimeout(function() {
-                        step = -5;
-                    }, (audio.duration - Number(firstSource.dataset.out)) * 1000);
                     audio.play().then(function() {
                         resolve();
                     });
