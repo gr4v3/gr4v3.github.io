@@ -6,7 +6,7 @@ body {
 }
 h1 {
     text-align: center;
-    padding: 1em 0;
+    padding-bottom: 1.6em;
     font-family: sans-serif;
     text-transform: uppercase;
 }
@@ -40,6 +40,11 @@ footer a:hover {
 article {
     padding: 0.9em;
 }
+audio {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
 
 @media only screen
 and (max-device-width: 1200px) {
@@ -69,3 +74,27 @@ and (max-device-width: 480px) {
     }
 }
 
+.permission {
+    position: fixed;
+    font-size: 2em;
+    cursor: pointer;
+    width: 1.4em;
+    height: 1em;
+    right: 0;
+}
+.permission ion-icon {
+    position: absolute;
+    top:0;
+    left:0;
+}
+.permission ion-icon[name="volume-mute-outline"] {
+    left: 7px;
+}
+.permission:not(.muted) ion-icon[name="volume-mute-outline"],
+.permission.muted ion-icon[name="volume-off-outline"] {
+    display: none;
+}
+.permission.muted ion-icon[name="volume-mute-outline"],
+.permission:not(.muted) ion-icon[name="volume-off-outline"] {
+    display: block;
+}
