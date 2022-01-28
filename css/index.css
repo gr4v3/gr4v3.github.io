@@ -1,39 +1,34 @@
 body {
-    color: white;
+    display: flex;
+    justify-content: center;
     background-color: black;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
-body {
-    background-image: url(../img/fundo.jpg);
-    background-repeat: no-repeat;
-    background-size: 76em;
-    background-position: top center;
-    width: 100%;
-}
-main {
-    padding-top: 25em;
-    margin: auto;
-    width: 61vw;
-}
-article {
-    padding: 5px;
+    color: white;
 }
 h1 {
     text-align: center;
     padding: 1em 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+main {
+    width: 61vw;
+}
+main > * {
+    margin: 1em;
+}
+img {
+    width: 100%;
 }
 p {
     text-indent: 17px;
+    text-align: justify;
 }
 footer {
     display: flex;
     justify-content: center;
     gap: 2em;
     font-size: 2em;
-    padding: 1em;
+    margin-top: 2em;
 }
 footer a {
     color: white;
@@ -42,39 +37,35 @@ footer a {
 footer a:hover {
     color: white;
 }
-
+article {
+    padding: 0.9em;
+}
 
 @media only screen
 and (max-device-width: 1200px) {
-    body {
-        background-size: 100%;
-    }
     main {
-        padding-top: 25em;
-        width: 90vw;
+        width: 80vw;
     }
 }
 
 @media only screen
 and (max-device-width: 1024px) {
-    body {
-        background-size: 100%;
-    }
     main {
-        padding-top: 22em;
+        width: 87vw;
+    }
+}
+
+@media only screen
+and (max-device-width: 768px) {
+    main {
         width: 90vw;
     }
 }
 
 @media only screen
 and (max-device-width: 480px) {
-    body {
-        background-size: 100%;
-    }
     main {
-        padding-top: 8em;
-        width: 90vw;
+        width: 95vw;
     }
 }
-
 
