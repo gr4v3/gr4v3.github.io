@@ -6,10 +6,46 @@ body {
 }
 h1 {
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
     font-family: sans-serif;
     text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+h2 img {
+
+    cursor: pointer;
+    transform-origin: center;
+
+}
+h2 img.record {
+    width: 6em;
+    animation-fill-mode: forwards;
+    animation: spin 4s infinite linear;
+}
+h2.muted img.record {
+    animation-play-state: paused;
+}
+h2 .click {
+    position: absolute;
+    width: 2em;
+    top: 2.1em;
+    left: 4em;
+}
+h2:not(.muted) .click {
+    display: none;
 }
 main {
     width: 61vw;
