@@ -16,6 +16,17 @@ h2 {
     margin: auto;
     margin-bottom: 0.5em;
 }
+.flags {
+    text-align: right;
+}
+.flags a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.flags span {
+    margin: 4px;
+}
 @keyframes spin {
     0% {
         transform: rotate(0deg);
