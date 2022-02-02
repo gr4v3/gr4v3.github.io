@@ -41,9 +41,9 @@
             [ <i>" La musique de DUL est une expérience unique à travers des thèmes qui suggèrent différents types de sentiments. Ils visitent la joie et l'intervention, avec des thèmes tels que "Marche du Peuple Sangra" et "Fun&Farra", il embrasse fortement l'intensité d'un voyage tribal, avec des thèmes tels que "Bird on a String", et se remémorent dans l'introspection sur l'amour, dans des thèmes tels que "About a Boy" et "Amor Epithelial." Vers la fin de ce voyage émotionnel éclectique, ils donnent également au goût une petite dose de nostalgie qui se cache, innocemment, derrière des interprétations très spécifiques de thèmes tels que "Gaivota", d'Amália Rodrigues, et "O Prelúdio Para a Laurindinha", un thème qui combine l'interprétation du thème bien connu "Laurindinha" d'António Mourão , avec un prélude créé par le groupe lui-même. "</i> ] - (dans la presse)
         </p>
         <div class="flags">
-            <a href="/pt">pt</a>
-            <span>|</span>
             <a href="/en">en</a>
+            <span>|</span>
+            <a href="/pt">pt</a>
         </div>
     </article>
     <footer>

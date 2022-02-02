@@ -42,9 +42,9 @@
             [ <i>" A música dos DUL é uma experiência singular através de temas que sugerem vários tipos de sentimentos. Visitam a alegria e a intervenção, com temas como a “Marcha do Povo Sangra” e “Fun&Farra”, abraça com bastante força a intensidade de uma viagem tribal, com temas como a “Pássaro de Corda”, e se recolhem novamente na introspeção sobre o amor, em temas como a “About a Boy” e o "Amor Epitelial". Quase no final desta eclética viagem emocional, dão também a provar uma pequena dose de saudosismo e nostalgia que se escondem, inocentemente, por detrás de interpretações muito próprias de temas como a “Gaivota”, de Amália Rodrigues, e “O Prelúdio Para a Laurindinha”, tema que junta a interpretação do conhecido tema "Laurindinha” de António Mourão, com um prelúdio criado pela própria banda. ” </i>&nbsp] — (in press)
         </p>
         <div class="flags">
-            <a href="/fr">fr</a>
-            <span>|</span>
             <a href="/en">en</a>
+            <span>|</span>
+            <a href="/fr">fr</a>
         </div>
     </article>
     <footer>
